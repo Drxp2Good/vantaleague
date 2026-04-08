@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEADERBOARD | VANTA LEAGUE</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+    <div class="glow top"></div>
+    <div class="glow bottom"></div>
+
+<a href="index.html" class="logo-anchor">
+    <img src="../assets/logo.png" alt="VANTA LOGO" class="main-logo">
+</a>
+
+<div class="nav">
+    <a href="index.html">Home</a>
+    <a href="league.html">Leaderboard</a>
+    <a href="matches.html">Tournaments</a> 
+    <a href="login.html">Log In</a>
+</div>
+
+    <div class="center">
+        <div style="margin-bottom: 30px; text-align: center;">
+            <span style="color: #9333ea; font-size: 10px; tracking: 5px; font-weight: bold; text-transform: uppercase;">
+                VANTA LEAGUE SEASON 1
+            </span>
+            <h1 style="font-style: italic; font-size: 3rem; margin-top: 10px;">STANDINGS</h1>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>TEAM</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>PTS</th>
+                </tr>
+            </thead>
+            <tbody id="standings-body">
+                <tr>
+                    <td colspan="4" style="text-align: center; padding: 40px; opacity: 0.3;">
+                        INITIALIZING CONNECTION...
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer">
+            DATA SYNCED WITH VANTA MASTERNODE // SEASON 01
+        </div>
+    </div>
+
+    <script src="backend.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
