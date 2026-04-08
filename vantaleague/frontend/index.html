@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VANTA LEAGUE | HOME</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="glow top"></div>
+    <div class="glow bottom"></div>
+    <div class="scanline"></div>
+
+    <a href="index.html" class="logo-anchor">
+        <img src="../assets/logo.png" alt="VANTA LOGO" class="main-logo">
+    </a>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="league.html">Leaderboard</a>
+        <a href="matches.html">Tournaments</a> 
+        <a href="login.html">Log In</a>
+    </div>
+
+    <div class="container">
+        <section class="hero">
+            <h1 class="hero-title">VANTA LEAGUE</h1>
+            <p class="hero-subtitle">THE NEXT GENERATION OF COMPETITIVE COUNTER-STRIKE.</p>
+            
+            <div class="hero-btns">
+                <a href="https://discord.gg/mWZJ5Gw7k9" target="_blank" class="btn join-btn">
+                    JOIN LEAGUE <span class="btn-icon">→</span>
+                </a>
+            </div>
+        </section>
+
+        <div class="home-grid">
+            <div class="card stat-card">
+                <span class="card-label">TOP TEAM</span>
+                <h3 id="mvp-name">LOADING...</h3>
+                <p>CURRENT LEADERS</p>
+                <div class="status-bar"><div class="fill-purple"></div></div>
+            </div>
+
+            <div class="card stat-card">
+                <span class="card-label">MONTHLY MVP</span>
+                <h3 id="monthly-mvp-name">TBD</h3>
+                <p>SEASON 1 MVP</p>
+                <div class="status-bar"><div class="fill-purple"></div></div>
+            </div>
+            
+            <div class="card stat-card">
+                <span class="card-label">LIVE PLAYERS</span>
+                <h3 id="player-count">0</h3>
+                <p>SYNCED ON DISCORD</p>
+                <div class="status-bar"><div class="fill-purple"></div></div>
+            </div>
+
+            <div class="card stat-card">
+                <span class="card-label">SEASON BOUNTY</span>
+                <h3>$500</h3>
+                <p>SEASON 1 PRIZE POOL</p>
+                <div class="status-bar"><div class="fill-purple"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="backend.js"></script>
+</body>
+</html>
