@@ -8,28 +8,26 @@
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
-
     <div class="glow top"></div>
     <div class="glow bottom"></div>
 
-<a href="index.html" class="logo-anchor">
-    <img src="logo.png" alt="VANTA LOGO" class="main-logo">
+<a href="index.html" class="logo-anchor logo-left">
+    <img src="logo.png" alt="VANTA" class="main-logo">
+</a>
+<a href="index.html" class="logo-anchor logo-right">
+    <img src="logo.png" alt="VANTA" class="main-logo">
 </a>
 
-<div class="nav">
-    <a href="index.html">Home</a>
-    <a href="league.html">Leaderboard</a>
-    <a href="matches.html">Tournaments</a> 
-    <a href="login.html">Log In</a>
-</div>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="league.html">Leaderboard</a>
+        <a href="matches.html">Tournaments</a> 
+        <a href="login.html">Log In</a>
+    </div>
 
     <div class="center">
-        <div style="margin-bottom: 30px; text-align: center;">
-            <span style="color: #9333ea; font-size: 10px; tracking: 5px; font-weight: bold; text-transform: uppercase;">
-                VANTA LEAGUE SEASON 1
-            </span>
-            <h1 style="font-style: italic; font-size: 3rem; margin-top: 10px;">STANDINGS</h1>
-        </div>
+        <span class="season-label">VANTA LEAGUE SEASON 1</span>
+        <h1 class="table-title">STANDINGS</h1>
 
         <table class="table">
             <thead>
@@ -55,6 +53,5 @@
     </div>
 
     <script src="backend.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
